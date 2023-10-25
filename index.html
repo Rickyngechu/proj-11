@@ -16,43 +16,46 @@
     <title>
       Frontend Mentor | Fylo landing page with dark theme and features grid
     </title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <!-- <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style> -->
   </head>
   <body>
-    <section class="hero bg-Dark-Blue-2">
+    <section class="hero">
       <nav
-        class="navigation max-w-7xl w-[95%] mx-auto flex justify-between items-center py-8"
+        class="navigation max-w-md w-[90%] laptop:max-w-7xl laptop:w-[95%] mx-auto flex justify-between items-center py-8"
       >
         <img src="images/logo.svg" alt="logo" class="logo-img h-7" />
 
         <ul class="flex">
-          <li class="mr-4 text-white-2 font-normal">
+          <li class="mr-4 text-white-2 font-normal laptop:hover:text-White">
             <a href="#">Features</a>
           </li>
-          <li class="mr-4 text-white-2 font-normal"><a href="#">Team</a></li>
-          <li class="text-white-2 font-normal"><a href="#">Sign in</a></li>
+          <li class="mr-4 text-white-2 font-normal laptop:hover:text-White">
+            <a href="#">Team</a>
+          </li>
+          <li class="text-white-2 font-normal laptop:hover:text-White">
+            <a href="#">Sign in</a>
+          </li>
         </ul>
       </nav>
-      <div class="cont max-w-7xl w-[90%] mx-auto">
-        <div class="hero-det text-center py-4">
-          <div class="img mb-8">
-            <img src="images/illustration-intro.png" alt="Illustration" />
+      <div class="cont max-w-7xl w-[90%] laptop:w-[95%] mx-auto">
+        <div
+          class="hero-det text-center py-4 max-w-md mx-auto laptop:max-w-full"
+        >
+          <div class="img mb-8 text-center">
+            <img
+              src="images/illustration-intro.png"
+              alt="Illustration"
+              class="inline-block laptop:w-[30rem]"
+            />
           </div>
-          <div class="hero-content">
-            <h1 class="main-heading font-bold text-White text-2xl mb-6">
+          <div class="hero-content laptop:inline-block laptop:max-w-3xl">
+            <h1
+              class="main-heading font-bold text-White text-2xl mb-6 laptop:text-3xl"
+            >
               All your files in one secure location,accessible anywhere
             </h1>
-            <p class="hero-text text-white-2 mb-6">
+            <p
+              class="hero-text text-white-2 mb-6 laptop:text-base laptop:w-2/3 laptop:mx-auto laptop:mb-10"
+            >
               Fylo stores all your most important files in one secure
               location.Access them wherever you need,share and collaborae with
               friends family and co-workers.
@@ -69,92 +72,99 @@
     </section>
 
     <section class="why-us bg-Dark-Blue-2 py-20">
-      <div class="cont max-w-7xl w-[90%] mx-auto">
-        <div class="why-us flex flex-col gap-16">
-          <div class="item-1 text-center">
-            <img
-              src="images/icon-access-anywhere.svg"
-              alt="Access everywhere"
-              class="inline-block mb-7"
-            />
+      <div class="cont max-w-7xl w-[90%] laptop:w-[95%] mx-auto">
+        <div
+          class="why-us flex flex-col gap-16 max-w-md mx-auto laptop:max-w-full"
+        >
+          <div class="items-1 laptop:flex laptop:gap-8 laptop:items-center">
+            <div class="item-1 text-center laptop:w-1/2 laptop:p-10 mb-6">
+              <img
+                src="images/icon-access-anywhere.svg"
+                alt="Access everywhere"
+                class="inline-block mb-7"
+              />
 
-            <h2 class="subheading mb-2 font-bold text-lg text-White">
-              Access your files,anywhere
-            </h2>
+              <h2 class="subheading mb-2 font-bold text-lg text-White">
+                Access your files,anywhere
+              </h2>
 
-            <p class="txt text-base text-white-2">
-              The ability to use a smartphone to access your account means your
-              files follow you everywhere.
-            </p>
+              <p class="txt text-base text-white-2">
+                The ability to use a smartphone to access your account means
+                your files follow you everywhere.
+              </p>
+            </div>
+
+            <div class="item-2 text-center laptop:w-1/2 laptop:p-10">
+              <img
+                src="images/icon-security.svg"
+                alt="Security"
+                class="inline-block mb-7"
+              />
+
+              <h2 class="subheading mb-2 font-bold text-lg text-White">
+                Security you can trust
+              </h2>
+
+              <p class="txt text-base text-white-2">
+                2 Factor authentication and user controled encyption are just a
+                couple of the security features we allow to help secure your
+                files.
+              </p>
+            </div>
           </div>
+          <div class="items-2 laptop:flex laptop:gap-8 laptop:items-center">
+            <div class="item-2 text-center laptop:p-10 laptop:w-1/2 mb-6">
+              <img
+                src="images/icon-collaboration.svg"
+                alt="Collaboration"
+                class="inline-block mb-7"
+              />
 
-          <div class="item-1 text-center">
-            <img
-              src="images/icon-security.svg"
-              alt="Security"
-              class="inline-block mb-7"
-            />
+              <h2 class="subheading mb-2 font-bold text-lg text-White">
+                Real time collaboration
+              </h2>
 
-            <h2 class="subheading mb-2 font-bold text-lg text-White">
-              Security you can trust
-            </h2>
+              <p class="txt text-base text-white-2">
+                Securely share files and folders wit friends,family colleagues
+                for live collaboration.No email attachments required.
+              </p>
+            </div>
 
-            <p class="txt text-base text-white-2">
-              2 Factor authentication and user controled encyption are just a
-              couple of the security features we allow to help secure your
-              files.
-            </p>
-          </div>
+            <div class="item-4 text-center laptop:p-10 laptop:w-1/2">
+              <img
+                src="images/icon-any-file.svg"
+                alt="Any file"
+                class="inline-block mb-7"
+              />
 
-          <div class="item-1 text-center">
-            <img
-              src="images/icon-collaboration.svg"
-              alt="Collaboration"
-              class="inline-block mb-7"
-            />
+              <h2 class="subheading mb-2 font-bold text-lg text-White">
+                Store any type of file
+              </h2>
 
-            <h2 class="subheading mb-2 font-bold text-lg text-White">
-              Real time collaboration
-            </h2>
-
-            <p class="txt text-base text-white-2">
-              Securely share files and folders wit friends,family colleagues for
-              live collaboration.No email attachments required.
-            </p>
-          </div>
-
-          <div class="item-1 text-center">
-            <img
-              src="images/icon-any-file.svg"
-              alt="Any file"
-              class="inline-block mb-7"
-            />
-
-            <h2 class="subheading mb-2 font-bold text-lg text-White">
-              Store any type of file
-            </h2>
-
-            <p class="txt text-base text-white-2">
-              Whether you are sharing holiday photos or work documents,Fylo has
-              you covered allowing for all file types to be securely stored and
-              shared.
-            </p>
+              <p class="txt text-base text-white-2">
+                Whether you are sharing holiday photos or work documents,Fylo
+                has you covered allowing for all file types to be securely
+                stored and shared.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="productive-section h-[50rem] bg-Dark-Blue-2 py-20">
-      <div class="cont max-w-7xl w-[90%] mx-auto">
-        <div class="product">
-          <div class="img mb-9">
+    <section class="productive-section bg-Dark-Blue-2 py-20">
+      <div class="cont max-w-7xl w-[90%] laptop:w-[95%] mx-auto">
+        <div
+          class="product max-w-md laptop:max-w-full mx-auto laptop:flex laptop:gap-12 laptop:items-center"
+        >
+          <div class="img mb-9 laptop:w-1/2">
             <img
               src="images/illustration-stay-productive.png"
               alt="collaboration"
             />
           </div>
 
-          <div class="prod-det text-left">
+          <div class="prod-det text-left laptop:w-1/2">
             <h2 class="sub-heading mb-2 font-bold text-lg text-White">
               Stay productive,wherever you are
             </h2>
@@ -171,21 +181,64 @@
               </span>
             </p>
 
-            <a href="#" class="works-btn py-1"
-              ><span class="inline-block text-Cyan font-bold text-sm"
+            <a href="#" class="works-btn py-1 group laptop:hover:border-b-White"
+              ><span
+                class="inline-block text-Cyan font-bold text-sm laptop:group-hover:text-White"
                 >See how Fylo works</span
               >
-              <img src="images/icon-arrow.svg" alt="Arrow"
-            /></a>
+
+              <svg
+                width="16"
+                height="16"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                class="inline-block laptop:group-hover:fill-White"
+              >
+                <defs>
+                  <circle id="b" cx="6" cy="6" r="6" />
+                  <filter
+                    x="-25%"
+                    y="-25%"
+                    width="150%"
+                    height="150%"
+                    filterUnits="objectBoundingBox"
+                    id="a"
+                  >
+                    <feOffset in="SourceAlpha" result="shadowOffsetOuter1" />
+                    <feGaussianBlur
+                      stdDeviation="1"
+                      in="shadowOffsetOuter1"
+                      result="shadowBlurOuter1"
+                    />
+                    <feColorMatrix
+                      values="0 0 0 0 0.384313725 0 0 0 0 0.878431373 0 0 0 0 0.850980392 0 0 0 0.811141304 0"
+                      in="shadowBlurOuter1"
+                    />
+                  </filter>
+                </defs>
+                <g fill="none" fill-rule="evenodd">
+                  <g transform="translate(2 2)">
+                    <use fill="#000" filter="url(#a)" xlink:href="#b" />
+                    <use fill="#62E0D9" xlink:href="#b" />
+                  </g>
+                  <path
+                    d="M8.582 6l-.363.35 1.452 1.4H5.333v.5h4.338L8.22 9.65l.363.35 2.074-2z"
+                    fill="#1B2330"
+                  />
+                </g>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="reviews-section py-20 bg-Dark-Blue-2">
-      <div class="cont max-w-7xl w-[90%] mx-auto">
-        <div class="reviews flex flex-col gap-10 px-5">
-          <div class="review-1 p-6 relative rounded-md bg-Dark-Blue-4">
+    <section class="reviews-section bg-Dark-Blue-2">
+      <div class="cont max-w-7xl w-[90%] laptop:w-[95%] mx-auto">
+        <div
+          class="reviews laptop:max-w-full flex flex-col gap-10 px-5 max-w-md mx-auto laptop:flex-row"
+        >
+          <div class="review-1 p-6 relative rounded-md bg-Dark-Blue-4 z-10">
             <img
               src="images/bg-quotes.png"
               alt="Quotes"
@@ -211,7 +264,7 @@
             </div>
           </div>
 
-          <div class="review-2 p-6 relative rounded-md bg-Dark-Blue-4">
+          <div class="review-2 p-6 relative rounded-md bg-Dark-Blue-4 z-10">
             <img
               src="images/bg-quotes.png"
               alt="Quotes"
@@ -237,7 +290,7 @@
             </div>
           </div>
 
-          <div class="review-3 p-6 relative rounded-md bg-Dark-Blue-4">
+          <div class="review-3 p-6 relative rounded-md bg-Dark-Blue-4 z-10">
             <img
               src="images/bg-quotes.png"
               alt="Quotes"
@@ -266,9 +319,11 @@
       </div>
     </section>
 
-    <section class="cta bg-Light-Red">
-      <div class="cont max-w-7xl w-[90%] mx-auto">
-        <div class="cta bg-Dark-Blue-1 text-center p-4 translate-y-40 z-10">
+    <section class="cta bg-Dark-Blue-2">
+      <div class="cont max-w-7xl w-[90%] laptop:w-[95%] mx-auto">
+        <div
+          class="cta max-w-md mx-auto bg-Dark-Blue-1 text-center p-4 translate-y-36 laptop:translate-y-28 z-10 rounded-lg laptop:max-w-2xl"
+        >
           <h2 class="sub-heading text-White font-bold text-xl mb-4">
             Get early access today
           </h2>
@@ -279,65 +334,129 @@
             be happy to help you.
           </p>
           <div class="form">
-            <input
-              type="email"
-              placeholder="email@example.com"
-              class="btn w-full inline-block py-3 px-12 rounded-3xl font-bold bg-White text-White mb-5"
-            />
-
-            <button
-              type="submit"
-              class="btn w-full inline-block py-3 px-12 rounded-3xl font-bold bg-gradient-to-r from-Cyan to-Blue text-White"
+            <form
+              action="#"
+              class="laptop:flex laptop:gap-8 laptop:items-center"
             >
-              Get Started For Free
-            </button>
+              <input
+                type="email"
+                required
+                placeholder="email@example.com"
+                class="w-full inline-block py-3 px-12 rounded-3xl font-bold bg-White text-White mb-5 laptop:inline-block laptop:mb-0 laptop:w-[25rem]"
+              />
+
+              <button
+                type="submit"
+                class="btn w-full inline-block py-3 px-12 rounded-3xl font-bold bg-gradient-to-r laptop:text-xs from-Cyan to-Blue text-White laptop:w-[15rem]"
+              >
+                Get Started For Free
+              </button>
+            </form>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="bg-Dark-Blue-3 pt-56">
-      <div class="cont max-w-7xl w-[90%] mx-auto">
-        <div class="footer-cont">
-          <img src="images/logo.svg" alt="logo" class="h-10 mb-10 ml-4" />
+    <footer class="bg-Dark-Blue-3 pt-56 pb-10 laptop:pt-44">
+      <div class="cont max-w-7xl w-[90%] laptop:w-[95%] mx-auto">
+        <div class="footer-cont max-w-md mx-auto laptop:max-w-full">
+          <div class="footer-img">
+            <img src="images/logo.svg" alt="logo" class="h-10 mb-10 ml-4" />
+          </div>
+          <div class="details laptop:flex laptop:items-center laptop:gap-10">
+            <ul class="mb-6 laptop:w-2/4 laptop:mb-0">
+              <li class="flex mb-5">
+                <img
+                  src="images/icon-location.svg"
+                  alt="location"
+                  class="h-8 mr-4"
+                />
+                <span class="text-white-2"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptas sequi cum quis esse ullam aliquam obcaecati.
+                  Architecto nesciunt minima eveniet alias, reprehenderit
+                  consectetur commodi sunt!</span
+                >
+              </li>
+              <li class="flex mb-5">
+                <img src="images/icon-phone.svg" alt="Phone" class="mr-4" />
+                <span class="text-white-2">+1-543-123-4567</span>
+              </li>
 
-          <ul class="mb-6">
-            <li class="flex mb-5">
-              <img
-                src="images/icon-location.svg"
-                alt="location"
-                class="h-8 mr-4"
-              />
-              <span class="text-white-2"
-                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas sequi cum quis esse ullam aliquam obcaecati. Architecto
-                nesciunt minima eveniet alias, reprehenderit consectetur commodi
-                sunt!</span
-              >
-            </li>
-            <li class="flex mb-5">
-              <img src="images/icon-phone.svg" alt="Phone" class="mr-4" />
-              <span class="text-white-2">+1-543-123-4567</span>
-            </li>
-
-            <li class="flex mb-5">
-              <img src="images/icon-email.svg" alt="mail" class="mr-4" />
-              <span class="text-white-2">example@fylo.com</span>
-            </li>
-
-            <ul class="text-white-2 mb-5">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Jobs</a></li>
-              <li><a href="#">Press</a></li>
-              <li><a href="#">Blog</a></li>
+              <li class="flex mb-5">
+                <img src="images/icon-email.svg" alt="mail" class="mr-4" />
+                <span class="text-white-2">example@fylo.com</span>
+              </li>
+            </ul>
+            <ul class="text-white-2 mb-5 laptop:w-1/4">
+              <li class="laptop:hover:text-White"><a href="#">About us</a></li>
+              <li class="laptop:hover:text-White"><a href="#">Jobs</a></li>
+              <li class="laptop:hover:text-White"><a href="#">Press</a></li>
+              <li class="laptop:hover:text-White"><a href="#">Blog</a></li>
             </ul>
 
-            <ul class="text-white-2">
-              <li><a href="#">Contact US</a></li>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Privacy</a></li>
+            <ul class="text-white-2 mb-10 laptop:w-1/4">
+              <li class="laptop:hover:text-White">
+                <a href="#">Contact US</a>
+              </li>
+              <li class="laptop:hover:text-White"><a href="#">Terms</a></li>
+              <li class="laptop:hover:text-White"><a href="#">Privacy</a></li>
             </ul>
-          </ul>
+
+            <div class="flex justify-center gap-5 laptop:w-1/4">
+              <a href="#" class="social-link">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  class="svg-icon"
+                >
+                  <title>facebook2</title>
+                  <path
+                    d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h13v-14h-4v-4h4v-2c0-3.306 2.694-6 6-6h4v4h-4c-1.1 0-2 0.9-2 2v2h6l-1 4h-5v14h9c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" class="social-link">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  class="svg-icon"
+                >
+                  <title>twitter</title>
+                  <path
+                    d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"
+                  ></path></svg
+              ></a>
+
+              <a href="#" class="social-link">
+                <svg
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  class="svg-icon"
+                >
+                  <title>instagram</title>
+                  <path
+                    d="M16 2.881c4.275 0 4.781 0.019 6.462 0.094 1.563 0.069 2.406 0.331 2.969 0.55 0.744 0.288 1.281 0.638 1.837 1.194 0.563 0.563 0.906 1.094 1.2 1.838 0.219 0.563 0.481 1.412 0.55 2.969 0.075 1.688 0.094 2.194 0.094 6.463s-0.019 4.781-0.094 6.463c-0.069 1.563-0.331 2.406-0.55 2.969-0.288 0.744-0.637 1.281-1.194 1.837-0.563 0.563-1.094 0.906-1.837 1.2-0.563 0.219-1.413 0.481-2.969 0.55-1.688 0.075-2.194 0.094-6.463 0.094s-4.781-0.019-6.463-0.094c-1.563-0.069-2.406-0.331-2.969-0.55-0.744-0.288-1.281-0.637-1.838-1.194-0.563-0.563-0.906-1.094-1.2-1.837-0.219-0.563-0.481-1.413-0.55-2.969-0.075-1.688-0.094-2.194-0.094-6.463s0.019-4.781 0.094-6.463c0.069-1.563 0.331-2.406 0.55-2.969 0.288-0.744 0.638-1.281 1.194-1.838 0.563-0.563 1.094-0.906 1.838-1.2 0.563-0.219 1.412-0.481 2.969-0.55 1.681-0.075 2.188-0.094 6.463-0.094zM16 0c-4.344 0-4.887 0.019-6.594 0.094-1.7 0.075-2.869 0.35-3.881 0.744-1.056 0.412-1.95 0.956-2.837 1.85-0.894 0.888-1.438 1.781-1.85 2.831-0.394 1.019-0.669 2.181-0.744 3.881-0.075 1.713-0.094 2.256-0.094 6.6s0.019 4.887 0.094 6.594c0.075 1.7 0.35 2.869 0.744 3.881 0.413 1.056 0.956 1.95 1.85 2.837 0.887 0.887 1.781 1.438 2.831 1.844 1.019 0.394 2.181 0.669 3.881 0.744 1.706 0.075 2.25 0.094 6.594 0.094s4.888-0.019 6.594-0.094c1.7-0.075 2.869-0.35 3.881-0.744 1.050-0.406 1.944-0.956 2.831-1.844s1.438-1.781 1.844-2.831c0.394-1.019 0.669-2.181 0.744-3.881 0.075-1.706 0.094-2.25 0.094-6.594s-0.019-4.887-0.094-6.594c-0.075-1.7-0.35-2.869-0.744-3.881-0.394-1.063-0.938-1.956-1.831-2.844-0.887-0.887-1.781-1.438-2.831-1.844-1.019-0.394-2.181-0.669-3.881-0.744-1.712-0.081-2.256-0.1-6.6-0.1v0z"
+                  ></path>
+                  <path
+                    d="M16 7.781c-4.537 0-8.219 3.681-8.219 8.219s3.681 8.219 8.219 8.219 8.219-3.681 8.219-8.219c0-4.537-3.681-8.219-8.219-8.219zM16 21.331c-2.944 0-5.331-2.387-5.331-5.331s2.387-5.331 5.331-5.331c2.944 0 5.331 2.387 5.331 5.331s-2.387 5.331-5.331 5.331z"
+                  ></path>
+                  <path
+                    d="M26.462 7.456c0 1.060-0.859 1.919-1.919 1.919s-1.919-0.859-1.919-1.919c0-1.060 0.859-1.919 1.919-1.919s1.919 0.859 1.919 1.919z"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

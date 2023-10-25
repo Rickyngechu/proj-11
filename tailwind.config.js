@@ -16,6 +16,16 @@ module.exports = {
       White: " hsl(0, 0%, 100%)",
       "white-2": "hsla(0, 0%, 84%, 0.813)",
     },
+    screens: {
+      tablet: "640px",
+      // => @media (min-width: 640px) { ... }
+
+      laptop: "900px",
+      // => @media (min-width: 1024px) { ... }
+
+      desktop: "1280px",
+      // => @media (min-width: 1280px) { ... }
+    },
   },
   plugins: [],
 };

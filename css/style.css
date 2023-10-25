@@ -38,6 +38,16 @@ font-family: "Raleway", sans-serif; */
 
 /* Styles for elements selected using classes or id */
 @layer components {
+  .hero {
+    background-image: linear-gradient(
+        hsla(217, 27%, 13%, 0.955),
+        hsla(217, 27%, 13%, 0.848)
+      ),
+      url(../images/bg-curvy-mobile.svg);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
   /* Header section */
   .main-heading,
   .subheading {
@@ -59,8 +69,46 @@ font-family: "Raleway", sans-serif; */
   /* Quotes img */
   .quotes-img {
     position: absolute;
-    top: 0;
+    top: -1rem;
     left: 0;
-    /* z-index: -1; */
+    z-index: -1;
+  }
+
+  /* Styling the social links */
+  .social-link {
+    padding: 0.5rem;
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+    transition: all 0.2s ease;
+  }
+  .social-link svg {
+    fill: #fff;
+    height: 1rem;
+    width: 1rem;
+
+    transition: all 0.2s ease;
+  }
+
+  @media screen and (min-width: 900px) {
+    .btn:hover {
+      opacity: 0.8;
+    }
+    .social-link:hover {
+      border: 1px solid hsl(176, 68%, 64%);
+    }
+    .social-link:hover > svg {
+      fill: hsl(176, 68%, 64%);
+    }
+    .hero {
+      background-image: linear-gradient(
+          hsla(217, 27%, 13%, 0.955),
+          hsla(217, 27%, 13%, 0.848)
+        ),
+        url(../images/bg-curvy-desktop.svg);
+      background-position: bottom;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
   }
 }
