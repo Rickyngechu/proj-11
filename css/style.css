@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* font-family: "Open Sans", sans-serif;
+font-family: "Raleway", sans-serif; */
+
+/* Styling for the basic html tags */
+@layer base {
+  /* Basic presets */
+  *,
+  *::before,
+  *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    box-sizing: border-box;
+  }
+  body {
+    text-rendering: optimizeLegibility;
+    font-family: "Raleway", sans-serif;
+    /* font-weight: 400; */
+  }
+  img {
+    max-width: 100%;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+  }
+}
+
+/* Styles for elements selected using classes or id */
+@layer components {
+}
