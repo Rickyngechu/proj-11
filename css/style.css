@@ -22,7 +22,7 @@ font-family: "Raleway", sans-serif; */
   }
   body {
     text-rendering: optimizeLegibility;
-    font-family: "Raleway", sans-serif;
+    font-family: "Open Sans", sans-serif;
     /* font-weight: 400; */
   }
   img {
@@ -38,4 +38,9 @@ font-family: "Raleway", sans-serif; */
 
 /* Styles for elements selected using classes or id */
 @layer components {
+  /* Header section */
+  .main-heading,
+  .subheading {
+    font-family: "Raleway", sans-serif;
+  }
 }
