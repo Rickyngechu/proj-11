@@ -2330,6 +2330,11 @@ ul {
   color: hsla(0, 0%, 84%, 0.813);
 }
 
+.text-Dark-Blue-2{
+  --tw-text-opacity: 1;
+  color: hsl(218 28% 13% / var(--tw-text-opacity));
+}
+
 .underline{
   text-decoration-line: underline;
 }
